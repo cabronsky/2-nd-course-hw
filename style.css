@@ -303,4 +303,12 @@ button {
     padding-left: 16px;
     padding-right: 16px;
   }
+  .header__bigstar {
+    position: absolute;
+    width: 223.52px;
+    height: 238.57px;
+    left: 489.81px;
+    top: -40.43px;
+    transform: rotate(108.68deg);
+  }
 }/*# sourceMappingURL=style.css.map */
