@@ -1,23 +1,23 @@
-let a = Number(10);
+let a = 10;
 alert(a); 
-a = Number(20);
+a = 20;
 alert(a); // 1
 
 const iphone = alert('Год выпуска первого Iphone'); // 2
 
 const javaScript = alert('Имя создателя JS'); // 3
 
-let b = Number(2);
-a = Number(10);
+let b = 2;
+a = 10;
 alert(a+b);
 alert(a-b);
 alert(a*b);
 alert(a/b); // 4
 
-let result = Number(alert(b**5)); // 5
+let result = (alert(b**5)); // 5
 
-a = Number(9);
-let remainder = Number(alert(a%b)); // 6
+a = 9;
+let remainder = (alert(a%b)); // 6
 
 let num = 1;
 num += 5;
@@ -33,7 +33,7 @@ alert(age); // 8
 
 const user = {
     name: '',
-    age: Number,
+    age: 25,
     isAdmin: true }; 
 let info = prompt("Ваше имя", "name");
 alert(`Привет, ${info}`); // 9, 10
