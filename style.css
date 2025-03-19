@@ -31,18 +31,20 @@ button {
 }
 .header__bigstar {
   position: absolute;
-  width: calc(100% - 366px);
-  height: calc(100% + 331px);
-  left: calc(100% - 586px);
-  right: calc(100% + 488px);
-  top: calc(100% - 1133px);
+  width: 749.55px;
+  width: 1074px;
+  height: 1130.46px;
+  left: 854px;
+  right: -488px;
+  top: -333.46px;
+  bottom: 3px;
 }
 .header__smallstar1 {
   position: absolute;
   width: 57px;
   height: 57px;
   left: 63px;
-  top: calc(100% - 706px);
+  top: 94px;
   color: rgb(188, 236, 48);
 }
 .header__smallstar2 {
@@ -57,7 +59,7 @@ button {
   width: 35px;
   height: 35px;
   left: 156px;
-  top: calc(100% - 731px);
+  top: 69px;
 }
 .header__smallstar4 {
   position: absolute;
@@ -98,6 +100,9 @@ button {
   letter-spacing: 0px;
   text-align: left;
   margin-top: 24px;
+}
+.head__paragraph_mobile {
+  display: none;
 }
 .head__button {
   width: 247px;
@@ -314,6 +319,30 @@ button {
   .header__bigstar {
     display: none;
   }
+  .header__smallstar1 {
+    width: 35px;
+    height: 35px;
+    left: 38px;
+    top: 97px;
+  }
+  .header__smallstar2 {
+    width: 39px;
+    height: 41px;
+    left: 304px;
+    top: 580px;
+  }
+  .header__smallstar3 {
+    width: 21px;
+    height: 21px;
+    left: 92px;
+    top: 64px;
+  }
+  .header__smallstar4 {
+    width: 18px;
+    height: 18px;
+    left: 273px;
+    top: 557px;
+  }
   .menu-mobile {
     display: block;
   }
@@ -321,8 +350,8 @@ button {
     position: absolute;
     width: 223.52px;
     height: 238.57px;
-    left: 489.81px;
-    top: -40.43px;
+    left: 240px;
+    top: -90px;
     transform: rotate(108.68deg);
   }
   .head {
@@ -338,6 +367,10 @@ button {
     text-align: center;
   }
   .head__paragraph {
+    display: none;
+  }
+  .head__paragraph_mobile {
+    display: block;
     justify-content: center;
     align-items: center;
     padding: 0px;
@@ -346,12 +379,22 @@ button {
     line-height: 20px;
     letter-spacing: 0px;
     text-align: center;
+    -moz-column-break-before: unset;
+         break-before: unset;
   }
   .head__button {
     width: 285px;
     height: 55px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 142%;
+    letter-spacing: 0%;
+    text-align: center;
   }
   .head__line {
     height: 51px;
+  }
+  .game-box {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

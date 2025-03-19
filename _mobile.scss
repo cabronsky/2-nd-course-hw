@@ -17,6 +17,34 @@
         &__bigstar {
             display: none;
         }
+
+        &__smallstar1 {
+            width: 35px;
+            height: 35px;
+            left: 38px;
+            top: 97px;
+        }
+
+        &__smallstar2 {
+            width: 39px;
+            height: 41px;
+            left: 304px;
+            top: 580px;
+        }
+
+        &__smallstar3 {
+            width: 21px;
+            height: 21px;
+            left: 92px;
+            top: 64px;
+        }
+
+        &__smallstar4 {
+            width: 18px;
+            height: 18px;
+            left: 273px;
+            top: 557px;
+        }
     }
 
     .menu-mobile {
@@ -27,8 +55,8 @@
         position: absolute;
         width: 223.52px;
         height: 238.57px;
-        left: 489.81px;
-        top: -40.43px;
+        left: 240px;
+        top: -90px;
         transform: rotate(108.68deg);
     }
 
@@ -46,23 +74,38 @@
         }
 
         &__paragraph {
-            justify-content: center;
-            align-items: center;
-            padding: 0px;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 20px;
-            letter-spacing: 0px;
-            text-align: center;
+            display: none;
+
+            &_mobile {
+                display: block;    
+                justify-content: center;
+                align-items: center;
+                padding: 0px;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: 0px;
+                text-align: center;
+                break-before:unset;
+            }
         }
 
         &__button {
             width: 285px;
             height: 55px;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 142%;
+            letter-spacing: 0%;
+            text-align: center;
         }
 
         &__line {
             height: 51px;
         }
+    }
+
+    .game-box {
+        display: none;
     }
 }    

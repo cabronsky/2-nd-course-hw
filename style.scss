@@ -32,18 +32,20 @@ button {
 
     &__bigstar {
         position: absolute;
-        width: calc(100% - 366px);
-        height: calc(100% + 331px);
-        left: calc(100% - 586px);
-        right: calc(100% + 488px);
-        top: calc(100% - 1133px);
+        width: 749.55px;
+        width: 1074px;
+        height: 1130.46px;
+        left: 854px;
+        right: -488px;
+        top: -333.46px;
+        bottom: 3px;
     }    
     &__smallstar1 {
         position: absolute;
         width: 57px;
         height: 57px;
         left: 63px;
-        top: calc(100% - 706px);
+        top: 94px;
         color: 
         rgb(188, 236, 48);
     }
@@ -61,7 +63,7 @@ button {
         width: 35px;
         height: 35px;
         left: 156px;
-        top: calc(100% - 731px);
+        top: 69px;
     }
 
     &__smallstar4 {
@@ -105,6 +107,10 @@ button {
         letter-spacing: 0px;
         text-align: left;
         margin-top: 24px;
+
+        &_mobile {
+            display: none;
+        }
     }
 
     &__button {
