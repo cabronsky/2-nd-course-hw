@@ -19,12 +19,31 @@ let result = Number(alert(b**5)); // 5
 a = Number(9);
 let remainder = Number(alert(a%b)); // 6
 
+let num = 1;
+num += 5;
+num -= 3;
+num *= 7;
+num /= 3;
+num += 1;
+num -= 1;
+alert(num); // 7
+
 let age = Number(prompt('Сколько вам лет?'));
 alert(age); // 8
 
-let user = {
+const user = {
     name: '',
     age: Number,
     isAdmin: true }; 
 let info = prompt("Ваше имя", "name");
 alert(`Привет, ${info}`); // 9, 10
+
+let number = Number(prompt('Загадай число'));
+let newNumber = number * 2;
+alert(newNumber);
+let nextNumber = newNumber + 10;
+alert(nextNumber);
+let fourthNumber = nextNumber / 2;
+alert(fourthNumber);
+let yourResult = fourthNumber - number;
+alert(`Ваш результат равен ${yourResult}`); // доп задание
