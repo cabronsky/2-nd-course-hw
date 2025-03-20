@@ -24,8 +24,8 @@ num += 5;
 num -= 3;
 num *= 7;
 num /= 3;
-num += 1;
-num -= 1;
+num = ++1;
+num = --1;
 alert(num); // 7
 
 let age = Number(prompt('Сколько вам лет?'));
