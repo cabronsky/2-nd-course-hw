@@ -93,6 +93,7 @@ button {
   text-align: left;
 }
 .head__paragraph {
+  max-width: 720px;
   color: rgb(32, 32, 39);
   font-size: 24px;
   font-weight: 400;
@@ -328,7 +329,7 @@ button {
     width: 39px;
     height: 41px;
     left: 304px;
-    top: 580px;
+    top: 620px;
   }
   .header__smallstar3 {
     width: 21px;
@@ -340,7 +341,7 @@ button {
     width: 18px;
     height: 18px;
     left: 273px;
-    top: 557px;
+    top: 597px;
   }
   .menu-mobile {
     display: block;
@@ -366,20 +367,16 @@ button {
     text-align: center;
   }
   .head__paragraph {
-    display: none;
-  }
-  .head__paragraph_mobile {
-    display: block;
     justify-content: center;
     align-items: center;
     padding: 0px;
     font-size: 16px;
-    font-weight: 400;
     line-height: 20px;
     letter-spacing: 0px;
     text-align: center;
     -moz-column-break-before: unset;
          break-before: unset;
+    padding-top: 24px;
   }
   .head__button {
     width: 285px;
