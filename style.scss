@@ -358,7 +358,6 @@ button {
         height: 35.15px;
         left: 1281.33px;
         margin-top: 93px;
-        transform: rotate(7.08deg);
     }
 
     &__star2 {
@@ -367,7 +366,24 @@ button {
         height: 68.86px;
         left: 1326.54px;
         margin-top: 126px;
-        transform: rotate(5.45deg);
+    }
+
+    &__star3 {
+        position: absolute;
+        width: 69px;
+        height: 69px;
+        left: 1319px;
+        bottom: 65px;
+        transform: rotate(-5.45deg);
+    }
+
+    &__star4 {
+        position: absolute;
+        width: 41px;
+        height: 41px;
+        left: 1249px;
+        bottom: 45px;
+        transform: rotate(-7.08deg);
     }
 
     &__heading {
@@ -387,24 +403,18 @@ button {
     grid-template-columns:
             repeat(12, 1fr);
     margin-top: 72px;
-    margin-bottom: 50px;
+    margin-bottom: 144px;
 
     &__item {
         width: 100%;
-        height: auto;
         grid-column: span 12;
         background-color: white;
         color: black;
-        font-style: normal;
-        font-size: 34px;
-        font-weight: 600;
-        line-height: 41px;
         display: flex;
         flex-direction: row;
-        justify-content: start;
-        align-items: end;
+        justify-content: space-between;
+        align-items: flex-start;
         border-radius: 30px;
-        text-decoration: none;
 
         &-box {
             display: flex;
@@ -413,7 +423,6 @@ button {
             max-height: 500px;
             justify-content: flex-start;
             align-items: flex-start;
-            gap: 10;
             padding: 48px;
         }
 
@@ -428,18 +437,16 @@ button {
 
         &-desc {
             color: rgb(32, 32, 39);
-            font-family: Montserrat;
             font-size: 24px;
             font-weight: 400;
             line-height: 32px;
             letter-spacing: 0px;
             text-align: left;
             padding-top: 24px;
-            margin-bottom: 36px;
+            
         }
 
         &-image {
-            width: 600px;
             height: 500px;
         }
     }
