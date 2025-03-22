@@ -398,7 +398,8 @@ button {
   padding-top: 24px;
 }
 .games__item-image {
-  height: 500px;
+  display: flex;
+  max-height: 500px;
 }
 
 .footer {
