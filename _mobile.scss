@@ -84,16 +84,17 @@
             break-before:unset;
             padding-top: 24px;
         }
+    }
 
-        &__button {
-            width: 285px;
-            height: 55px;
-            font-size: 16px;
-            font-weight: 600;
-            line-height: 142%;
-            letter-spacing: 0%;
-            text-align: center;
-        }
+    .button {
+        margin-top: 32px;
+        width: 285px;
+        height: 55px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 142%;
+        letter-spacing: 0%;
+        text-align: center;
     }
 
     .line {
@@ -103,4 +104,54 @@
     .game-box {
         display: none;
     }
-}    
+
+    .games {
+        margin-bottom: 49px;
+    }
+    
+    .games-box__heading {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 49px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+
+    .games__item {
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: 343px;
+
+        &-mobile {
+        display: flex;
+        flex-direction: column;
+        }
+
+        &-box {
+            padding: 
+            29px 29px 32px 29px;
+        }
+
+        &-image {
+            width: 343px;
+            height: 285px;
+        }
+
+        &-name {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 39px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+
+        &-desc {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0px;
+            text-align: left;
+            padding-top: 16px;
+        }
+    }
+} 
