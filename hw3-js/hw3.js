@@ -55,4 +55,15 @@ switch (monthNumber) {
 
 // Доп задание
 
-let x = Number(prompt('Пожалуйста, введите любое число'));
+let x = prompt('Пожалуйста, введите любое число');
+if (isNaN(Number(x))) {
+    alert('No');
+} else {
+    alert('Yes');
+};
+
+if (Number(x % 2 === 0)) {
+    alert('Число четное')
+} else {
+    alert('Число нечетное')
+} // 1

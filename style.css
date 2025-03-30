@@ -491,7 +491,8 @@ button {
          break-before: unset;
     padding-top: 24px;
   }
-  .head__button {
+  .button {
+    margin-top: 32px;
     width: 285px;
     height: 55px;
     font-size: 16px;
@@ -505,5 +506,46 @@ button {
   }
   .game-box {
     display: none;
+  }
+  .games {
+    margin-bottom: 49px;
+  }
+  .games-box__heading {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  .games__item {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 343px;
+  }
+  .games__item-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .games__item-box {
+    padding: 29px 29px 32px 29px;
+  }
+  .games__item-image {
+    width: 343px;
+    height: 285px;
+  }
+  .games__item-name {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  .games__item-desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-top: 16px;
   }
 }/*# sourceMappingURL=style.css.map */
