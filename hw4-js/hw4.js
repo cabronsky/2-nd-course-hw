@@ -12,7 +12,7 @@ while (c <= 5) {
 } // 2
 
 for (let d = 7; d <= 22; d++) {
-    console.log(d);  
+    console.log(d);
 } // 3
 
 const obj = {
@@ -36,6 +36,26 @@ console.log(`результат ${num}`);
 
 let friday = 5;
 let days = 31;
-for (let p = friday; p <= days ; p += 7) {
+for (let p = friday; p <= days; p += 7) {
     console.log(`сегодня пятница ${p} число. Необходимо подготовить отчет.`);
 } // 6
+
+let k = 100;
+let iterations = 0;
+while (k >= 0) {
+    k -= 7;
+    console.log(k);
+    iterations++;
+}
+console.log(iterations); // доп задание 1
+
+const book = {
+    name: 'Заповедник',
+    author: 'Довлатов',
+    year: '1977',
+    style: 'prose'
+};
+for (const key in book) {
+    console.log(`${key} - ${book[key]}`);
+} // доп задание 3
+
