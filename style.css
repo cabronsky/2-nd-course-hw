@@ -488,7 +488,6 @@ button {
     text-align: center;
     -moz-column-break-before: unset;
          break-before: unset;
-    padding-top: 24px;
   }
   .button {
     margin-top: 32px;
