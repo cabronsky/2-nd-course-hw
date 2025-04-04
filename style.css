@@ -398,6 +398,7 @@ button {
 .games__item-image {
   display: flex;
   max-height: 500px;
+  border-radius: 30px;
 }
 
 .footer {
@@ -425,7 +426,7 @@ button {
   .header {
     padding-left: 16px;
     padding-right: 16px;
-    height: 700px;
+    height: 649px;
   }
   .header__bigstar {
     display: none;
@@ -440,7 +441,7 @@ button {
     width: 39px;
     height: 41px;
     left: 304px;
-    top: 620px;
+    top: 580px;
   }
   .header__smallstar3 {
     width: 21px;
@@ -452,7 +453,7 @@ button {
     width: 18px;
     height: 18px;
     left: 273px;
-    top: 597px;
+    top: 557px;
   }
   .menu-mobile {
     display: block;
@@ -506,7 +507,9 @@ button {
     display: none;
   }
   .games {
+    margin-top: 48px;
     margin-bottom: 49px;
+    gap: 24px;
   }
   .games-box__heading {
     font-size: 40px;
