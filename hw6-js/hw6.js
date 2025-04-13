@@ -28,8 +28,8 @@ let one = [1, 1, 1];
 one.push(2, 2, 2);
 console.log(one); // 5
 
-let a = [9, 8, 7, 'a', 6, 5];
-a.sort();
+let a = [9, 11, 8, 7, "a", 6, 5];
+a.sort((a, b) => a - b);
 console.log(a);
 a = a.filter(item => item !== 'a');
 console.log(a); // 6
@@ -96,4 +96,4 @@ const sum = numbers.reduce((total, num) => total + num, 0);
 const average = sum / numbers.length;
 
 console.log("Сгенерированный массив:", numbers);
-console.log("Среднее арифметическое:", average);
+console.log("Среднее арифметическое:", average); // 15
