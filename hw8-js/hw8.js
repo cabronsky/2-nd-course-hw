@@ -47,6 +47,7 @@ function delayForSecond(callback) {
     // Код писать можно только внутри этой функции
    callback();
 }
+
 delayForSecond(function () {
    console.log('Привет, Глеб!');
-})
+});
