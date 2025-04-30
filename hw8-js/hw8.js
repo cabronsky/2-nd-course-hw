@@ -44,10 +44,21 @@ setTimeout(() => {
 // 3
 
 function delayForSecond(callback) {
-    // Код писать можно только внутри этой функции
-   callback();
+    setTimeout(callback, 3000)
 }
-
 delayForSecond(function () {
-   console.log('Привет, Глеб!');
+    console.log('Привет, Глеб!');
 });
+// 4
+
+function delayForSecond(cb) {
+    setTimeout(() => {
+        console.log('Прошла одна секунда');
+        if (cb) { cb(); }
+    }, 1000)
+}
+function sayHi(name) {
+    console.log(`Привет, ${name}!`);
+}
+delayForSecond(() => sayHi('Глеб'));
+// 5
