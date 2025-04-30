@@ -1,37 +1,22 @@
-function runQuiz() {
-    const quiz = [
-        {
-            question: "Какой цвет небо?",
-            options: ["1. Красный", "2. Синий", "3. Зеленый"],
-            correctAnswer: 2 
-        },
-        {
-            question: "Сколько дней в неделе?",
-            options: ["1. Шесть", "2. Семь", "3. Восемь"],
-            correctAnswer: 2 
-        },
-        {
-            question: "Сколько у человека пальцев на одной руке?",
-            options: ["1. Четыре", "2. Пять", "3. Шесть"],
-            correctAnswer: 2 
-        }
-    ];
+const choices = ["камень", "ножницы", "бумага"];
 
-    let correctAnswersCount = 0;
+const userChoice = prompt("Выберите: камень, ножницы или бумага").toLowerCase();
 
-    for (let i = 0; i < quiz.length; i++) {
-        const question = quiz[i];
-
-        let userAnswer = prompt(`${question.question}\n${question.options.join("\n")}`);
-
-        userAnswer = parseInt(userAnswer);
-
-        if (userAnswer === question.correctAnswer) {
-            correctAnswersCount++;
-        }
-    }
-
-    alert(`Ты правильно ответил на ${correctAnswersCount} из ${quiz.length} вопросов.`);
+if (!choices.includes(userChoice)) {
+    alert("Неверный выбор. Попробуйте еще раз.");
+  } else { 
+    const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+    let result = "";
+    if (userChoice === computerChoice) {
+        result = "Ничья!";
+      } else if (
+        (userChoice === "камень" && computerChoice === "ножницы") ||
+        (userChoice === "ножницы" && computerChoice === "бумага") ||
+        (userChoice === "бумага" && computerChoice === "камень")
+      ) {
+        result = "Вы победили!";
+      } else {
+        result = "Вы проиграли.";
+      }
+      alert(`Вы выбрали: ${userChoice}\nКомпьютер выбрал: ${computerChoice}\n${result}`);
 }
-
-runQuiz();
