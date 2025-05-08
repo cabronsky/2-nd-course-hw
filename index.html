@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini games Site</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="header">
         <img class="header__bigstar" src="./gamesitepics/stargroup.svg" alt="stars">
@@ -20,17 +23,19 @@
         <div class="menu-mobile">
             <img class="mobilestar" src="./gamesitepics/mobilestar.svg" alt="mobilestar">
         </div>
-        
+
         <section class="head center">
             <h1 class="head__heading center">Добро пожаловать <br> на мой сайт мини-игр</h1>
-            <p class="head__paragraph center">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <b>«Поехали!»</b> и <b>приступай.</b></p>
+            <p class="head__paragraph center">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай
+                <b>«Поехали!»</b> и <b>приступай.</b>
+            </p>
             <a class="button head__button center" href="#game-box">Поехали!</a>
         </section>
-    </header>  
+    </header>
 
     <section class="line">
         <div class="line__box">
-            
+
         </div>
     </section>
 
@@ -42,48 +47,49 @@
             <section class="center">
                 <h2 class="game-box__heading">Об играх</h2>
                 <p class="game-box__paragraph">В моей коллекции представлено 6 игр на разные темы.
-                <br>Игры несложные — в них может поиграть каждый.
-                <br>Все игры доступны для пользования.</p>
+                    <br>Игры несложные — в них может поиграть каждый.
+                    <br>Все игры доступны для пользования.
+                </p>
             </section>
         </div>
         <section class="game center">
             <a class="game__item game__item_1" href="#chislo">
                 <div class="game__item-box">
-                    <p class="game__item-number">Игра №1</p> 
-                    <h3 class="game__item-name">Угадай число</h3>   
+                    <p class="game__item-number">Игра №1</p>
+                    <h3 class="game__item-name">Угадай число</h3>
                 </div>
             </a>
             <a class="game__item game__item_2 game__item_big" href="#simple">
                 <div class="game__item-box">
-                    <p class="game__item-number">Игра №2</p> 
-                    <h3 class="game__item-name">Простая арифметика</h3> 
+                    <p class="game__item-number">Игра №2</p>
+                    <h3 class="game__item-name">Простая арифметика</h3>
                 </div>
             </a>
             <a class="game__item game__item_3" href="#text">
                 <div class="game__item-box">
-                    <p class="game__item-number">Игра №3</p> 
-                    <h3 class="game__item-name">Переверни текст</h3> 
+                    <p class="game__item-number">Игра №3</p>
+                    <h3 class="game__item-name">Переверни текст</h3>
                 </div>
             </a>
             <a class="game__item game__item_4 game__item_biggest" href="#stone">
                 <div class="game__item-box">
-                    <p class="game__item-number">Игра №4</p> 
-                    <h3 class="game__item-name">Камень, ножницы, <br>бумага</h3> 
+                    <p class="game__item-number">Игра №4</p>
+                    <h3 class="game__item-name">Камень, ножницы, <br>бумага</h3>
                 </div>
             </a>
             <a class="game__item game__item_5 game__item_big" href="#viktorina">
                 <div class="game__item-box">
-                    <p class="game__item-number">Игра №5</p> 
-                    <h3 class="game__item-name">Простая викторина</h3> 
+                    <p class="game__item-number">Игра №5</p>
+                    <h3 class="game__item-name">Простая викторина</h3>
                 </div>
             </a>
             <a class="game__item game__item_6 game__item_biggest" href="#colors">
                 <div class="game__item-box">
-                    <p class="game__item-number">Игра №6</p> 
-                    <h3 class="game__item-name">Генератор случайных цветов</h3> 
+                    <p class="game__item-number">Игра №6</p>
+                    <h3 class="game__item-name">Генератор случайных цветов</h3>
                 </div>
             </a>
-        </section>    
+        </section>
     </section>
 
     <section class="games-box center">
@@ -95,82 +101,214 @@
 
         <section class="games">
             <div class="games__item" id="chislo">
-                
-                <div class="games__item-box"> 
-                    <h2 class="games__item-name">Угадай число</h2>   
+
+                <div class="games__item-box">
+                    <h2 class="games__item-name">Угадай число</h2>
                     <p class="games__item-desc">Попробуй угадать случайное число от 1 до 100.</p>
-                    <a class="button games__item-button" href="./hw5-js/game1.html">Играть!</a>
+                    <button onclick="guessNumberGame()" class="button games__item-button">Играть!</button>
                 </div>
-                
+
                 <img class="games__item-image" src="./gamesitepics/game_1_1.svg" alt="game">
-                
+
             </div>
             <div class="games__item  games__item-mobile" id="simple">
-                
+
                 <img class="games__item-image" src="./gamesitepics/game_2_2.svg" alt="game">
-                
-                <div class="games__item-box"> 
-                    <h2 class="games__item-name">Простая арифметика</h2> 
+
+                <div class="games__item-box">
+                    <h2 class="games__item-name">Простая арифметика</h2>
                     <p class="games__item-desc">Попробуй решить простые арифметические задачи.</p>
-                    <a class="button games__item-button" href="./hw6-js/game2.html">Играть!</a>
-                 </div>
+                    <button onclick="startGame()" class="button games__item-button">Играть!</button>
+                </div>
 
             </div>
             <div class="games__item" id="text">
-                
-                <div class="games__item-box"> 
-                    <h2 class="games__item-name">Переверни текст</h2> 
+
+                <div class="games__item-box">
+                    <h2 class="games__item-name">Переверни текст</h2>
                     <p class="games__item-desc">Попробуй ввести текст, который будет перевернут.</p>
-                    <a class="button games__item-button" href="./hw7-js/game3.html">Играть!</a>
+                    <button onclick="reverseTextGame()" class="button games__item-button">Играть!</button>
                 </div>
-                
+
                 <img class="games__item-image" src="./gamesitepics/game_3_3.svg" alt="game">
-                
+
             </div>
             <div class="games__item games__item-mobile" id="viktorina">
-                
+
                 <img class="games__item-image" src="./gamesitepics/game_4_4.svg" alt="game">
-                
-                <div class="games__item-box"> 
-                    <h2 class="games__item-name">Викторина</h2> 
+
+                <div class="games__item-box">
+                    <h2 class="games__item-name">Викторина</h2>
                     <p class="games__item-desc">Отвечай на вопросы викторины с вариантами ответов.</p>
-                    <a class="button games__item-button" href="./hw7-js/game4.html">Играть!</a>
+                    <button onclick="runQuiz()" class="button games__item-button">Играть!</button>
                 </div>
-            
+
             </div>
             <div class="games__item" id="stone">
-                
-                <div class="games__item-box"> 
-                    <h2 class="games__item-name">Камень, <br>ножницы, <br>бумага</h2> 
+
+                <div class="games__item-box">
+                    <h2 class="games__item-name">Камень, <br>ножницы, <br>бумага</h2>
                     <p class="games__item-desc">Сыграй в популярную игру против компьютера.</p>
-                    <a class="button games__item-button" href="./hw8-js/game5.html">Играть!</a>
+                    <button onclick="stoneCutterPaper()" class="button games__item-button">Играть!</button>
                 </div>
-                
+
                 <img class="games__item-image" src="./gamesitepics/game_5_5.svg" alt="game">
-                
+
             </div>
             <div class="games__item games__item-mobile" id="colors">
-                
+
                 <img class="games__item-image" src="./gamesitepics/game_6_6.svg" alt="game">
-                
-                <div class="games__item-box"> 
-                    <h2 class="games__item-name">Генератор случайных <br>цветов</h2> 
-                    <p class="games__item-desc">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
+
+                <div class="games__item-box">
+                    <h2 class="games__item-name">Генератор случайных <br>цветов</h2>
+                    <p class="games__item-desc">Игра, в которой при клике на кнопку фон страницы меняется на случайный.
+                    </p>
                     <a class="button games__item-button" href="./hw10-js/game6.html">Играть!</a>
                 </div>
-            
+
             </div>
-        </section>  
-        
+        </section>
+
         <div>
             <img class="games-box__star3" src="./gamesitepics/Star_green.svg" alt="star">
             <img class="games-box__star4" src="./gamesitepics/Star_green.svg" alt="star">
-        </div>  
+        </div>
 
-    </section>   
-    
+    </section>
+
     <footer class="footer">
         <h3 class="footer-content">Все права защищены.</h3>
-    </footer>  
+    </footer>
+
+    <script>
+        function guessNumberGame() {
+            const number = 88;
+            let userGuess;
+
+            while (userGuess !== number) {
+                userGuess = Number(prompt("Угадайте число от 1 до 100:"));
+
+                if (userGuess < number) {
+                    alert("Загаданное число больше.");
+                } else if (userGuess > number) {
+                    alert("Загаданное число меньше.");
+                } else {
+                    alert("Поздравляю! Вы угадали число!");
+                }
+            }
+        }
+    </script>
+
+    <script>
+        function generateQuestion() {
+            const operations = ['+', '-', '*', '/'];
+            const operation = operations[Math.floor(Math.random() * operations.length)];
+            const num1 = Math.floor(Math.random() * 10) + 1;
+            const num2 = Math.floor(Math.random() * 10) + 1;
+            let question = '';
+            let correctAnswer;
+            if (operation === '+') {
+                question = `${num1} + ${num2}`;
+                correctAnswer = num1 + num2;
+            } else if (operation === '-') {
+                question = `${num1} - ${num2}`;
+                correctAnswer = num1 - num2;
+            } else if (operation === '*') {
+                question = `${num1} * ${num2}`;
+                correctAnswer = num1 * num2;
+            } else if (operation === '/') {
+                question = `${num1 * num2} / ${num2}`;
+                correctAnswer = num1;
+            }
+
+            return { question, correctAnswer };
+        }
+        function startGame() {
+            const { question, correctAnswer } = generateQuestion();
+            const userAnswer = parseFloat(prompt(`Решите задачу: ${question}`));
+            if (userAnswer === correctAnswer) {
+                alert("Верно! Молодец!");
+            } else {
+                alert(`Неверно! Правильный ответ: ${correctAnswer}`);
+            }
+        }
+    </script>
+
+    <script>
+        function reverseTextGame() {
+            const userInput = prompt("Введи текст:");
+            const upperCaseInput = userInput.toUpperCase();
+            const reversed = upperCaseInput.split('').reverse().join('');
+            alert("Перевёрнутый текст: " + reversed);
+        }
+    </script>
+
+    <script>
+        function runQuiz() {
+            const quiz = [
+                {
+                    question: "Какой цвет небо?",
+                    options: ["1. Красный", "2. Синий", "3. Зеленый"],
+                    correctAnswer: 2
+                },
+                {
+                    question: "Сколько дней в неделе?",
+                    options: ["1. Шесть", "2. Семь", "3. Восемь"],
+                    correctAnswer: 2
+                },
+                {
+                    question: "Сколько у человека пальцев на одной руке?",
+                    options: ["1. Четыре", "2. Пять", "3. Шесть"],
+                    correctAnswer: 2
+                }
+            ];
+
+            let correctAnswersCount = 0;
+
+            for (let i = 0; i < quiz.length; i++) {
+                const question = quiz[i];
+
+                let userAnswer = prompt(`${question.question}\n${question.options.join("\n")}`);
+
+                userAnswer = parseInt(userAnswer);
+
+                if (userAnswer === question.correctAnswer) {
+                    correctAnswersCount++;
+                }
+            }
+
+            alert(`Ты правильно ответил на ${correctAnswersCount} из ${quiz.length} вопросов.`);
+        }
+    </script>
+
+    <script>
+        function stoneCutterPaper() {
+            const choices = ["камень", "ножницы", "бумага"];
+            const userChoice = prompt("Выберите: камень, ножницы или бумага").toLowerCase();
+
+            if (!choices.includes(userChoice)) {
+                alert("Неверный выбор. Попробуйте еще раз.");
+            } else {
+                const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+                let result = "";
+
+                if (userChoice === computerChoice) {
+                    result = "Ничья!";
+                } else if (
+                    (userChoice === "камень" && computerChoice === "ножницы") ||
+                    (userChoice === "ножницы" && computerChoice === "бумага") ||
+                    (userChoice === "бумага" && computerChoice === "камень")
+                ) {
+                    result = "Вы победили!";
+                } else {
+                    result = "Вы проиграли.";
+                }
+
+                alert(`Вы выбрали: ${userChoice}\nКомпьютер выбрал: ${computerChoice}\n${result}`);
+            }
+        }
+    </script>
+
 </body>
+
 </html>
